@@ -34,7 +34,8 @@ const TotalCalc = () => {
           onChange={e => setAmount(e.target.value)}
         />
       </span>
-      = <span>{!total ? '$0.00' : `$${total.toFixed(2)}`}</span>
+      ={' '}
+      <span>{!total ? '$0.00' : `$${Math.round(total).toLocaleString()}`}</span>
     </div>
   );
 };

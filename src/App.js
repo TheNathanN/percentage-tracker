@@ -2,7 +2,7 @@ import './App.scss';
 
 import Title from './components/Title';
 import CalcContainer from './components/calc-comps/CalcContainer';
-import Tracker from './components/Tracker';
+import Tracker from './components/tracker-comps/Tracker';
 
 function App() {
   return (
