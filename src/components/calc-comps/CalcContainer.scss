@@ -1,0 +1,21 @@
+.calc-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.calc-options {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+
+.calc-container {
+  background-color: #253f65;
+  width: 100%;
+  border-radius: 15px;
+  margin: 0 auto;
+}
