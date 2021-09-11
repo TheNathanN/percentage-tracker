@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import './TotalCalc.scss';
+import styled from 'styled-components';
 
 const TotalCalc = () => {
   const [percent, setPercent] = useState();
@@ -17,7 +17,7 @@ const TotalCalc = () => {
   }, [percent, amount]);
 
   return (
-    <div className='total-container'>
+    <Container className='total-container'>
       <input
         className='total-percent'
         type='number'
@@ -36,8 +36,46 @@ const TotalCalc = () => {
       </span>
       ={' '}
       <span>{!total ? '$0.00' : `$${Math.round(total).toLocaleString()}`}</span>
-    </div>
+    </Container>
   );
 };
 
 export default TotalCalc;
+
+const Container = styled.div`
+  .total-container {
+    text-align: center;
+    line-height: 2rem;
+    font-size: 1.2rem;
+  }
+
+  .total-percent {
+    width: 3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  input {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-align: center;
+    height: 2rem;
+    border: none;
+    border-radius: 3px;
+    background-color: white;
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    &[type='number'] {
+      -moz-appearance: textfield;
+    }
+
+    &:active {
+      border: 0px solid transparent;
+    }
+  }
+`;

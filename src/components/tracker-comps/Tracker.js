@@ -1,7 +1,7 @@
 import React from 'react';
 import UserTracker from './UserTracker';
 
-import './Tracker.scss';
+import styled from 'styled-components';
 
 const Tracker = () => {
   const userData = {
@@ -14,14 +14,28 @@ const Tracker = () => {
   };
 
   return (
-    <section className='tracker'>
+    <Container className='tracker'>
       <div className='tracker-container'>
         {userData['users'].map(data => (
           <UserTracker user={data.user} percent={data.percent} key={data.id} />
         ))}
       </div>
-    </section>
+    </Container>
   );
 };
 
 export default Tracker;
+
+const Container = styled.section`
+  .tracker {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tracker-container {
+    width: 20rem;
+  }
+`;

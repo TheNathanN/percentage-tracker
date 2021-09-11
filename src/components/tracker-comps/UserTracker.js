@@ -1,10 +1,10 @@
 import React from 'react';
 
-import './UserTracker.scss';
+import styled from 'styled-components';
 
 const UserTracker = ({ user, percent }) => {
   return (
-    <div className='user-container'>
+    <Container className='user-container'>
       <div className='tracker-labels'>
         <p> {user} </p>
         <p> {percent}% of portfolio</p>
@@ -18,8 +18,27 @@ const UserTracker = ({ user, percent }) => {
         value={percent}
         readOnly
       />
-    </div>
+    </Container>
   );
 };
 
 export default UserTracker;
+
+const Container = styled.div`
+  .user-container {
+    margin-bottom: 1rem;
+  }
+
+  .tracker-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+  }
+
+  input[type='range'] {
+    width: 100%;
+    height: 1rem;
+    background-color: #253f65;
+    appearance: none;
+  }
+`;
