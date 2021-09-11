@@ -17,7 +17,7 @@ const TotalCalc = () => {
   }, [percent, amount]);
 
   return (
-    <Container className='total-container'>
+    <Container>
       <input
         className='total-percent'
         type='number'
@@ -43,11 +43,10 @@ const TotalCalc = () => {
 export default TotalCalc;
 
 const Container = styled.div`
-  .total-container {
-    text-align: center;
-    line-height: 2rem;
-    font-size: 1.2rem;
-  }
+  height: 10rem;
+  text-align: center;
+  line-height: 2rem;
+  font-size: 1.2rem;
 
   .total-percent {
     width: 3rem;

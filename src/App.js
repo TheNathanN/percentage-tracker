@@ -21,8 +21,13 @@ export default App;
 const Container = styled.div`
   width: 100%;
   height: 100vh;
+  margin: 3rem 0;
 
   main {
     padding: 0 1rem;
+
+    span {
+      display: block;
+    }
   }
 `;

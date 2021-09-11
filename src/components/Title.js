@@ -18,7 +18,7 @@ const Container = styled.header`
     font-size: 2rem;
     font-weight: normal;
     text-align: center;
-    margin: 3rem 0 2rem;
+    margin-bottom: 1rem;
   }
 
   span {

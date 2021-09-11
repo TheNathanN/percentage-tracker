@@ -14,7 +14,7 @@ const Tracker = () => {
   };
 
   return (
-    <Container className='tracker'>
+    <Container>
       <div className='tracker-container'>
         {userData['users'].map(data => (
           <UserTracker user={data.user} percent={data.percent} key={data.id} />
@@ -27,13 +27,11 @@ const Tracker = () => {
 export default Tracker;
 
 const Container = styled.section`
-  .tracker {
-    width: 100%;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
 
   .tracker-container {
     width: 20rem;

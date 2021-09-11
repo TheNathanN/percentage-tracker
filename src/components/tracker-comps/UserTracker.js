@@ -25,9 +25,7 @@ const UserTracker = ({ user, percent }) => {
 export default UserTracker;
 
 const Container = styled.div`
-  .user-container {
-    margin-bottom: 1rem;
-  }
+  margin: 1rem 0;
 
   .tracker-labels {
     display: flex;
@@ -35,7 +33,7 @@ const Container = styled.div`
     margin-bottom: 0.5rem;
   }
 
-  input[type='range'] {
+  input {
     width: 100%;
     height: 1rem;
     background-color: #253f65;

@@ -17,7 +17,7 @@ const PercCalc = () => {
   }, [amount, total]);
 
   return (
-    <Container className='perc-container'>
+    <Container>
       ${' '}
       <input
         className='dollar-amount'
@@ -41,14 +41,35 @@ const PercCalc = () => {
 export default PercCalc;
 
 const Container = styled.div`
-  .perc-container {
-    text-align: center;
-    line-height: 2rem;
-    font-size: 1.2rem;
-    margin-bottom: 0;
+  text-align: center;
+  line-height: 2rem;
+  font-size: 1.2rem;
+  height: 10rem;
+  margin-bottom: 0;
 
-    input {
-      font-size: 1rem;
+  input {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-align: center;
+    height: 2rem;
+    width: 15rem;
+    border: none;
+    border-radius: 3px;
+    background-color: white;
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    &[type='number'] {
+      -moz-appearance: textfield;
+    }
+
+    &:active {
+      border: 0px solid transparent;
     }
   }
 `;
