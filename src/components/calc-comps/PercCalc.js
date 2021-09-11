@@ -64,7 +64,7 @@ const Container = styled.div`
     cursor: pointer;
     text-align: center;
     height: 2rem;
-    width: 15rem;
+    width: 12rem;
     border: none;
     border-radius: 3px;
     background-color: white;
