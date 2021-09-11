@@ -18,20 +18,25 @@ const PercCalc = () => {
 
   return (
     <Container>
-      ${' '}
-      <input
-        className='dollar-amount'
-        type='number'
-        placeholder='Amount'
-        onChange={e => setAmount(e.target.value)}
-      />
-      <span> of </span>${' '}
-      <input
-        className='dollar-amount'
-        type='number'
-        placeholder='Total Portfolio + Amount'
-        onChange={e => setTotal(e.target.value)}
-      />
+      <span>
+        ${' '}
+        <input
+          className='dollar-amount'
+          type='number'
+          placeholder='Amount'
+          onChange={e => setAmount(e.target.value)}
+        />
+      </span>
+      <span> of </span>
+      <span>
+        ${' '}
+        <input
+          className='dollar-amount'
+          type='number'
+          placeholder='Total Portfolio + Amount'
+          onChange={e => setTotal(e.target.value)}
+        />
+      </span>
       <span> = </span>
       {!percent || !total ? '0%' : `${Math.round(percent)}%`}
     </Container>
@@ -40,12 +45,18 @@ const PercCalc = () => {
 
 export default PercCalc;
 
+//Styles
+
 const Container = styled.div`
   text-align: center;
   line-height: 2rem;
   font-size: 1.2rem;
   height: 10rem;
   margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   input {
     font-family: 'Archivo Narrow', sans-serif;

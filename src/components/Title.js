@@ -13,6 +13,8 @@ const Title = () => {
 
 export default Title;
 
+//Styles
+
 const Container = styled.header`
   .title {
     font-size: 2rem;

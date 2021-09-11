@@ -24,6 +24,8 @@ const UserTracker = ({ user, percent }) => {
 
 export default UserTracker;
 
+//Styles
+
 const Container = styled.div`
   margin: 1rem 0;
 

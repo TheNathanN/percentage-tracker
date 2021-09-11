@@ -18,13 +18,15 @@ const TotalCalc = () => {
 
   return (
     <Container>
-      <input
-        className='total-percent'
-        type='number'
-        placeholder='0'
-        onChange={e => setPercent(e.target.value)}
-      />{' '}
-      % of
+      <span>
+        <input
+          className='total-percent'
+          type='number'
+          placeholder='0'
+          onChange={e => setPercent(e.target.value)}
+        />{' '}
+        % of
+      </span>
       <span>
         ${' '}
         <input
@@ -42,11 +44,17 @@ const TotalCalc = () => {
 
 export default TotalCalc;
 
+//Styles
+
 const Container = styled.div`
   height: 10rem;
   text-align: center;
   line-height: 2rem;
   font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   .total-percent {
     width: 3rem;

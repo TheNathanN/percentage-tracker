@@ -35,12 +35,10 @@ export default CalcContainer;
 //Styles
 
 const Container = styled.section`
-  .calc-section {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-bottom: 1rem;
-  }
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 1rem;
 
   .calc-options {
     display: flex;
@@ -70,6 +68,6 @@ const Container = styled.section`
     width: 21rem;
     border-radius: 15px;
     margin: 0 auto;
-    padding: 1rem 0;
+    padding: 1rem 0 0.5rem;
   }
 `;
