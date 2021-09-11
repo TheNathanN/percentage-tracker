@@ -6,9 +6,10 @@ import './Tracker.scss';
 const Tracker = () => {
   const userData = {
     users: [
-      { user: 'name1', percent: 20, id: 1 },
-      { user: 'name2', percent: 60, id: 2 },
-      { user: 'name3', percent: 20, id: 3 },
+      { user: 'Doni', percent: 25, id: 1 },
+      { user: 'Tony', percent: 25, id: 2 },
+      { user: 'Matt', percent: 25, id: 3 },
+      { user: 'Aman', percent: 25, id: 4 },
     ],
   };
 

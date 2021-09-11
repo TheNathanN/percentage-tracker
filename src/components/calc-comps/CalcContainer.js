@@ -10,10 +10,16 @@ const CalcContainer = () => {
   return (
     <section className='calc-section'>
       <div className='calc-options'>
-        <h3 onClick={() => setCalc('total')}>
+        <h3
+          onClick={() => setCalc('total')}
+          className={`total-calc ${calc === 'total' && 'underline'}`}
+        >
           Total <span>Calculator</span>
         </h3>
-        <h3 onClick={() => setCalc('percent')}>
+        <h3
+          onClick={() => setCalc('percent')}
+          className={`percent-calc ${calc === 'percent' && 'underline'}`}
+        >
           Percent <span>Calculator</span>
         </h3>
       </div>

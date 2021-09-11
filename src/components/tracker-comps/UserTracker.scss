@@ -1,0 +1,11 @@
+.tracker-labels {
+  display: flex;
+  justify-content: space-between;
+}
+
+input[type='range'] {
+  width: 100%;
+  height: 1rem;
+  background-color: #253f65;
+  appearance: none;
+}
