@@ -7,20 +7,13 @@
   }
 }
 
-html {
-  width: 100%;
-  height: 100%;
-}
-
 body {
   width: 100%;
   height: 100%;
   font-family: 'Archivo Narrow', sans-serif;
   background: linear-gradient(106deg, #030506, #07041f);
   color: white;
-}
-
-#root {
-  width: 100%;
-  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

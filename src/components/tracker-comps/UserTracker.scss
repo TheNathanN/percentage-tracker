@@ -1,6 +1,11 @@
+.user-container {
+  margin-bottom: 1rem;
+}
+
 .tracker-labels {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 0.5rem;
 }
 
 input[type='range'] {
